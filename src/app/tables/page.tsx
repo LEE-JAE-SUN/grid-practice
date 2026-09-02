@@ -113,6 +113,7 @@ export default async function Tables() {
                 <tr>
                   <th>id</th>
                   <th>name</th>
+                  <th>team_name</th>
                   <th>created_at</th>
                 </tr>
               </thead>
@@ -121,6 +122,7 @@ export default async function Tables() {
                   <tr key={r.id}>
                     <td>{r.id}</td>
                     <td>{r.name}</td>
+                    <td>{r.teamName}</td>
                     <td className="muted">{r.createdAt.toISOString()}</td>
                   </tr>
                 ))}

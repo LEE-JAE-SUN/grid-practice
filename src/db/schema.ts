@@ -6,5 +6,6 @@ import { pgTable, serial, text, timestamp } from 'drizzle-orm/pg-core'
 export const participants = pgTable('participants', {
   id: serial('id').primaryKey(),
   name: text('name').notNull(),
+  teamName: text('team_name'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 })
