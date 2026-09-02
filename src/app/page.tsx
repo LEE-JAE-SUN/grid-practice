@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <main className="wrap">
-      <h1>환경 변수는 어디까지 보이나요?</h1>
+      <h1 className="blue">환경 변수는 어디까지 보이나요?</h1>
       <p className="lead">
         같은 <code>.env.local</code> 파일에 적어도, 이름에 따라 도착하는 곳이 다릅니다.
         두 화면을 차례로 열어보면서 직접 확인해봅시다.
@@ -25,7 +25,7 @@ export default function Home() {
         </p>
       </div>
 
-      <h2>먼저 할 일</h2>
+      <h2 className="yellow">먼저 할 일</h2>
       <pre>{`npm install
 cp .env.example .env.local     # Windows: Copy-Item .env.example .env.local
 npm run db:generate            # drizzle/ 아래에 .sql 파일이 생깁니다
