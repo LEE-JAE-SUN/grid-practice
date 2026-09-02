@@ -111,16 +111,16 @@ export default async function Tables() {
             <table>
               <thead>
                 <tr>
-                  <th>id</th>
-                  <th>name</th>
+                  <th>grade</th>
+                  <th>item_number</th>
                   <th>created_at</th>
                 </tr>
               </thead>
               <tbody>
                 {data.rows.map((r) => (
-                  <tr key={r.id}>
-                    <td>{r.id}</td>
-                    <td>{r.name}</td>
+                  <tr key={r.grade}>
+                    <td>{r.grade}</td>
+                    <td>{r.itemNumber}</td>
                     <td className="muted">{r.createdAt.toISOString()}</td>
                   </tr>
                 ))}
