@@ -15,6 +15,13 @@
       "when": 1788350979252,
       "tag": "0001_slim_diamondback",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1788411202117,
+      "tag": "0002_chilly_adam_destine",
+      "breakpoints": true
     }
   ]
 }

@@ -9,3 +9,12 @@ export const participants = pgTable('participants', {
   teamName: text('team_name'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 })
+
+/* 회원가입 실습용 표. 비밀번호는 평문으로 저장한다 — 실제 서비스에서는 절대 이렇게
+   하지 않고 bcrypt 등으로 해시해서 저장해야 한다. */
+export const users = pgTable('users', {
+  id: serial('id').primaryKey(),
+  email: text('email').notNull().unique(),
+  password: text('password').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+})
